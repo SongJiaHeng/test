@@ -643,23 +643,23 @@
         // 3. Date.now() H5新增 获得总的毫秒数
         
         // 倒计时案例  用时间戳计算  然后转换为天、时、分、秒
-        function countDown(time) {
-            var nowTime = +new Date();
-            var inputTime = +new Date(time);
-            var times = inputTime - nowTime; 
-            var days = parseInt(times / 1000 / 60 / 60 / 24);
-            days = days < 10 ? '0' + days : days;
-            var hours = parseInt(times / 1000 / 60 / 60 % 24);
-            hours = hours < 10 ? '0' + hours : hours;
-            var minutes = parseInt(times / 1000 / 60 % 60);
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            var seconds = parseInt(times/ 1000 % 60);
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-            return days + '天' + hours + '时'+ minutes + '分' + seconds + '秒';
-        }
-        console.log('还剩下' + countDown('2020-4-20 18:00:00'));
-        var date = new Date();
-        console.log(date);
+        // function countDown(time) {
+        //     var nowTime = +new Date();
+        //     var inputTime = +new Date(time);
+        //     var times = inputTime - nowTime; 
+        //     var days = parseInt(times / 1000 / 60 / 60 / 24);
+        //     days = days < 10 ? '0' + days : days;
+        //     var hours = parseInt(times / 1000 / 60 / 60 % 24);
+        //     hours = hours < 10 ? '0' + hours : hours;
+        //     var minutes = parseInt(times / 1000 / 60 % 60);
+        //     minutes = minutes < 10 ? '0' + minutes : minutes;
+        //     var seconds = parseInt(times/ 1000 % 60);
+        //     seconds = seconds < 10 ? '0' + seconds : seconds;
+        //     return days + '天' + hours + '时'+ minutes + '分' + seconds + '秒';
+        // }
+        // console.log('还剩下' + countDown('2020-4-20 18:00:00'));
+        // var date = new Date();
+        // console.log(date);
         
         // new Array() 创建数组
         // var arr1 = new Array();     // 空数组
